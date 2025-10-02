@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+# Dónde vive el micro que expone /api/saludos)
+backend:
+  base-url: http://localhost:8080
+
+# (Opcional) logs más amables
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
