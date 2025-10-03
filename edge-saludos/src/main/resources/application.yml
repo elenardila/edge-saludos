@@ -5,8 +5,13 @@ server:
 backend:
   base-url: http://localhost:8080
 
-# (Opcional) logs más amables
+
 spring:
   jackson:
     serialization:
       INDENT_OUTPUT: true
+
+supabase:
+  url: ${SUPABASE_URL}
+  table: saludos_extra
+  service-key: ${SUPABASE_SERVICE_KEY}
